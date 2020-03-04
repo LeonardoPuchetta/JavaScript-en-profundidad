@@ -1,0 +1,77 @@
+<!---- segundo SCRIPT DE JASCRIPT ----->
+            <!DOCTYPE HTML>
+ <html lang="es">
+<head>
+
+    
+<meta charset="utf-8"/>        <!--- para que se vean correctamente los tildes-->
+<title>Ejercicio DOM , eventos y funciones  </title>
+
+<script type="text/javascript" src="C:\Users\risso\Desktop\programacion\JavaScript\JAVASCRIPT-EN-PROFUNDIDAD-CURSO\ejercicio-dom.js">
+</script>
+
+<!--podemos ponerle un estilo a los elementos de cierta clase-->
+<style>
+.box{
+
+width: 250px;
+height: 200px;
+float: left;
+margin: 20px;
+}
+.dashed{
+border: 3px dashed black;
+padding : 5px;
+
+
+}
+
+</style>
+
+
+
+
+                    
+</head>
+
+<body>
+<!----
+    1.Formulario con nombres , apellido y edad 
+    2.Boton de enviar el formulario (evento submit)
+    3.Mostrar datos en pantalla
+    4.Boton para mostrar datos actuales del formulario . 
+-->
+
+<h1> Ejercicio DOM , eventos y funciones ohhhh  </h1>
+
+<div class ="box">
+<form action="" method="POST" id = "formulario" onsubmit= " return false  "> <br/>
+<label for ="nombre" >Nombre</label><br/>
+<input type="text" name="nombre" id="nombre"/><br/>
+
+<label for ="apellidos" >Apellidos</label><br/>
+<input type="text" name="apellidos" id="apellidos"/><br/>
+<label for ="edad" >Edad</label><br/>
+<input type="number" name="edad" id="edad"/><br/>
+<br/>
+
+
+<input type="submit" value="Enviar" id="submit"/><br/>
+</form>
+
+</div>
+<div class="box dashed">
+
+<h3>Informacion del usuario </h3>
+<hr>
+
+
+
+</div>
+</body>
+       
+
+
+
+</html>
+

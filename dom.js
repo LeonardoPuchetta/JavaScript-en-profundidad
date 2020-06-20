@@ -1,6 +1,6 @@
 'use srict'
 
-// dom : document object mode 
+// dom : document object model 
 
 // podemos definir funciones que actuen sobre el html 
 // y que son invocadas en consola 

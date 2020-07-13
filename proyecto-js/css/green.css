@@ -1,0 +1,19 @@
+#logo{
+    background:#008000;
+    }
+
+
+        #menu ul li:hover{
+            background: #008000;
+            
+            }   
+            .button_more{
+          
+                background: #008000;
+
+                }
+                body{
+                    background: url('../img/Grib_skov.jpg');
+                    background-attachment: fixed;
+                    
+                    }

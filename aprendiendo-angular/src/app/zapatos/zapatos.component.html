@@ -1,0 +1,69 @@
+
+<h2>{{titulo}}</h2>
+
+<p>Agregar marca </p>
+
+<p><input type="text" [(ngModel)]= "mi_marca" (keyup.enter)="mostrarPalabra()">
+<button (click)="getMarca()">Mostrar marca</button>
+<button (click)="agregarMarca()">Agregar marca</button>
+</p>
+
+
+
+<p>{{mi_marca}}</p>
+
+<p>
+Podes adquirir los zapatos de las mejores marcas : 
+</p>
+<ul>
+    <li *ngFor="let marca of marcas; let indice=index ">{{indice + ' - ' + marca }}
+     <button (click)= "borrarMarca(indice)">Borrar</button>
+
+    </li>
+</ul>
+
+<p>Los zapatos deportivos que tenemos disponibles son los siguientes : </p>
+
+<input type="text" [(ngModel)]= "color">
+   
+<ul>
+
+    <li *ngFor="let zapato of zapatos">
+        <span [ngStyle]="{
+            'text-decoration': !zapato.stock ? 'line-through' : 'none'
+        }">
+
+        {{zapato.nombre}} - <strong  [class.altoPrecio]= "zapato.precio >= 80" 
+          [ngClass] = "{
+            'fondorojo': zapato.precio > 100,
+            'subrayado': zapato.marca == 'Reebook' 
+          }"
+          >{{zapato.precio}}</strong> - <strong >{{zapato.marca}}</strong>
+
+        </span>
+        
+        
+        <span *ngIf = "zapato.precio < 250"
+        [style.background] = "zapato.precio < 250 ? 'green' : 'transparent' "
+        [style.color] = "zapato.precio < 250 ? 'red' : 'transparent' "
+       > 
+              ! EN OFERTA !</span>
+    </li>
+    
+</ul>
+
+<p> El color de la mayoria de nuestros zapatos es : </p>
+
+<ul [ngSwitch]= 'color'>
+   <li *ngSwitchCase = "'yellow'">
+     El color que predomina es el <span [ngStyle]="{
+         'background':color
+     }">amarillo</span>. 
+   </li>
+   <li *ngSwitchCase = "'red'">
+    El color que predomina es el <span style="background: red;">rojo</span>. 
+  </li>
+  <li *ngSwitchCase = "'blue'">
+    El color que predomina es el <span style="background:blue;">azul</span>.. 
+  </li>
+</ul>

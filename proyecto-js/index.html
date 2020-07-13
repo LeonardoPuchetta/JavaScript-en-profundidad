@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<title>Proyecto con JavaScript</title>
+
+<!--Estilos CSS   --> 
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link id ="theme" rel="stylesheet" type="text/css" href="css/red.css">
+
+
+
+<!--Slider este metodo precisa conexion a internet -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<!--Mis scripts-->
+<script src="C:\Users\risso\Desktop\programacion\JavaScript\JAVASCRIPT-EN-PROFUNDIDAD-CURSO\proyecto-js\js\main.js"></script>
+
+<!--Moment para manejar date -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha256-ZsWP0vT+akWmvEMkNYgZrPHKU9Ke8nYBPC3dqONp1mY=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js" integrity="sha256-TaYFETQITAuqJfL0mn0Mxcq6cM1uFvNOC3JcOaCGAs0=" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+<!--Botonera para cambio de estilos -->
+<div id='selector-theme'>
+<div id="to-green"></div>
+<div id="to-red"></div>
+<div id="to-gray"></div>
+
+</div>
+
+
+<!--creacion de un contenedor global-->
+<section id="global">
+
+<!--header para hacer la parte superior de la pagina , CABECERA  -->
+  <header >
+
+       <div id="logo">
+        <h1> Proyecto JS </h1> 
+       </div>
+
+       <div class="clearfix"></div>
+
+       <!--creacion de la barra de navegacion -->
+       <nav id="menu">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="reloj.html#">Reloj</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+              <li><a href="about.html">Sobre mi </a></li>
+   
+          </ul>
+       </nav> 
+
+
+  </header>
+       <!--Slider -->
+       <div id="slider">
+        <div class="bxslider">
+        <div><img src="img/1546536616998-100-anos-de-soledad-en-sus-mejores-frases.webp" title="Hielo"></div>
+        <div><img src="img/0160390.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg" title="Buendia"></div>
+        <div><img src="img/05.webp" title="otras"></div>
+        </div>
+       </div>
+       
+    <!--Contenido -->
+    <section id="content">
+        <div id="posts">
+         <!--post de ejemplo cargados desde un js  -->
+
+       <!-- <article class="post">
+        <h2> Cien años de soledad </h2>
+        <span class="date">Fecha de publicacion</span>
+        <p>
+            Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo. Macondo era entonces una aldea de veinte casas de barro y cañabrava construidas a la orilla de un río de aguas diáfanas que se precipitaban por un lecho de piedras pulidas, blancas y enormes como huevos prehistóricos. El mundo era tan reciente, que muchas cosas carecían de nombre, y para mencionarlas había que señalarlas con el dedo. Todos los años, por el mes de marzo, una familia de gitanos desarrapados plantaba su carpa cerca de la aldea, y con un grande alboroto de pitos y timbales daban a conocer los nuevos inventos. Primero llevaron el imán. Un gitano corpulento, de barba montaraz y manos de gorrión, que se presentó con el nombre de Melquíades, hizo una truculenta demostración pública de lo que él mismo llamaba la octava maravilla de los sabios alquimistas de Macedonia. Fue de casa en casa arrastrando dos lingotes metálicos, y todo el mundo se espantó al ver que los calderos, las pailas, las tenazas y los anafes se caían de su sitio, y las maderas crujían por la desesperación de los clavos y los tornillos tratando de desenclavarse, y aun los objetos perdidos desde hacía mucho tiempo aparecían por donde más se les había buscado, y se arrastraban en desbandada turbulenta detrás de los fierros mágicos de Melquíades. «Las cosas tienen vida propia —pregonaba el gitano con áspero acento—, todo es cuestión de despertarles el ánima». José Arcadio Buendía, cuya desaforada imaginación iba siempre más lejos que el ingenio de la naturaleza, y aun más allá del milagro y la magia, pensó que era posible servirse de aquella invención inútil para desentrañar el oro de la tierra. Melquíades, que era un hombre honrado, le previno: «Para eso no sirve». Pero José Arcadio Buendía no creía en aquel tiempo en la honradez de los gitanos, así que cambió su mulo y una partida de chivos por los dos lingotes imantados. Úrsula Iguarán, su mujer, que contaba con aquellos animales para ensanchar el desmedrado patrimonio doméstico, no consiguió disuadirlo. «Muy pronto ha de sobrarnos oro para empedrar la casa», replicó su marido. Durante varios meses se empeñó en demostrar el acierto de sus conjeturas. Exploró palmo a palmo la región, inclusive el fondo del río, arrastrando los dos lingotes de hierro y recitando en voz alta el conjuro de Melquíades. Lo único que logró desenterrar fue una armadura del siglo XV con todas sus partes soldadas por un cascote de óxido, cuyo interior tenía la resonancia hueca de un enorme calabazo lleno de piedras. Cuando José Arcadio Buendía y los cuatro hombres de su expedición lograron desarticular la armadura, encontraron dentro un esqueleto calcificado que llevaba colgado en el cuello un relicario de cobre con un rizo de mujer.
+        </p>
+
+        <a href="#" class="button_more">Leer mas</a>
+
+        </article>
+        <article class="post">
+            <h2> El pozo </h2>
+-            <span class="date">Fecha de publicacion</span>
+            <p>
+                En 1939, en la literatura uruguaya seguía prevaleciendo la narración de la ya anacrónica vida del gaucho y en general un costumbrismo rural, que si bien tenía unas características propias, no se alejaba mucho de esa corriente narrativa hispanoamericana llamada indigenismo. Ese año, un joven periodista llamado Juan Carlos Onetti escribe una novela absolutamente diferente a lo que se había publicado hasta entonces. El pozo no es su obra más conocida, eclipsada por su brillante carrera posterior, pero reviste una importancia fundamental dentro de la literatura hispanoamericana, y acaso, de las letras en lengua castellana.            </p>
+    
+            <a href="#" class="button_more">Leer mas</a>
+    
+            </article> -->
+        </div>
+        <aside id="sidebar">
+
+         <div id="about">
+         <h4><span>Quien soy ?</span> </h4>
+         <img src="C:\Users\risso\Desktop\programacion\JavaScript\JAVASCRIPT-EN-PROFUNDIDAD-CURSO\proyecto-js\img\hola.jpg">
+         <p>Aureliano Buendia </p>
+
+         </div>
+          <div id="logging">
+              <h4><span>Identificate</span></h4>
+              <form>
+                <label for="name">
+                      Nombre
+                </label>
+                <input type="text" name="name" id="nombre"></unput>
+
+                <label for="name">
+                    Correo
+              </label>
+              <input type="text" name="email" id="correo"></unput>
+
+              <label for="password">
+                Contraseña
+              </label>
+              <input type="password" name="password" id="pass"></unput>
+
+              <input type="submit" value="Enviar"></unput>
+
+              </form>
+          </div>
+
+
+        </aside>
+        <!--para limpiar "flotados"-->
+        <div class="clearfix"></div>
+    </section>
+
+
+
+
+
+
+</section>
+
+<!--seccion del footer , fuera de seccion global  -->
+<div class="clearfix"></div>
+
+<footer >
+    Master de JavaScript de Leonardo Puchetta &copy;
+    <a href="#" class="subir">Ir arriba</a>
+</footer>
+
+
+</body>
+
+</html>

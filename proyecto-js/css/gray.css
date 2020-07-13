@@ -1,0 +1,20 @@
+#logo{
+    background:#808080;
+    }
+
+
+        #menu ul li:hover{
+            background: #808080;
+            
+            }
+
+            .button_more{
+          
+                background: #808080;
+  
+                }
+                body{
+                    background: url('../img/rocas-metamorficas.jpg');
+                    background-attachment: fixed;
+                    
+                    }

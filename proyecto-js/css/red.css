@@ -1,0 +1,23 @@
+#logo{
+    background:#FF0000;
+    }
+
+    #menu ul li:hover{
+        background: #FF0000;
+        
+        }
+
+        .button_more{
+          
+            background: #FF0000;
+           
+            
+            
+            
+            }
+            body{
+                background: url('../img/weirwood_tree_by_ferret42-d5yme4r.jpg');
+                background-attachment: fixed;
+                
+                }
+

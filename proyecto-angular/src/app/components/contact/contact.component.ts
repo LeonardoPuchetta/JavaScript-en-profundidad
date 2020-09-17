@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewChild } from '@angular/core';
 declare var jQuery: any ;  // para usar el objeto jquery directamente
 declare var $: any;
 
@@ -8,20 +8,31 @@ declare var $: any;
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  public widthSlider: number;
+  public anchuraToSlider: any;
+  public captions: boolean ;
+  public autor: any;
 
-  constructor() { }
+  @ViewChild ('texto') textos ;
+
+  constructor() {
+    this.captions = true;
+
+  }
 
   ngOnInit(): void {
+console.log(this.textos);
 
-  $('#logo').click( () => {
-     $('header').css('background', 'green');
-     console.log('click');
-  });
-  $('.galery').bxSlider({
-    mode: 'fade',
-    captions: 'false',
-    slideWidth: '200'
-  });
   }
+  cargarSlider(){
+    this.anchuraToSlider = this.widthSlider;
+
+  }
+  resetearSlider(){
+    this.anchuraToSlider = null;
+
+  }
+  getAutor(event){
+    this.autor = event;  }
 
 }
